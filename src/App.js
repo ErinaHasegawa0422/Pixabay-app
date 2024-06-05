@@ -1,4 +1,5 @@
 import './App.css';
+import ImageGallery from './ImageGallery';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <form >
         <input type="text" placeholder="画像を探す" />
       </form>
+      <ImageGallery />
     </div>
   );
 }
