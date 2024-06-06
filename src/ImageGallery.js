@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ImageGallery.css"
 
-const ImageGallery = () => {
+const ImageGallery = ({ fetchData }) => {
   return (
     <div>
         <div className="images-wrapper">
