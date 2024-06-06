@@ -5,12 +5,14 @@ const ImageGallery = ({ fetchData }) => {
   return (
     <div>
         <div className="images-wrapper">
-            <div className="image">
-                <img 
-                src="" 
-                alt="" 
-                />
-            </div>
+            {fetchData.map((data) => (
+                    <div className="image" key={data.id}>
+                        <img 
+                        src={data.largeImageURL}
+                        alt="" 
+                        />
+                    </div>
+            ))}
         </div>
     </div>
   )
