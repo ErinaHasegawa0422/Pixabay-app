@@ -7,10 +7,9 @@ const ImageGallery = ({ fetchData }) => {
         <div className="images-wrapper">
             {fetchData.map((data) => (
                     <div className="image" key={data.id}>
-                        <img 
-                        src={data.largeImageURL}
-                        alt="" 
-                        />
+                        <a href={data.pageURL} target="_blank" rel="noopener noreferrer">
+                        <img src={data.largeImageURL} alt="" />
+                        </a>
                     </div>
             ))}
         </div>
